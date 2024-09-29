@@ -1,0 +1,241 @@
+:root {
+    --primary-blue:#005780;
+    --secondary-white: white;
+    --alternative-black: rgba(0, 0, 0, 0.774);
+    --completed-button: rgb(88, 6, 6);
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.top {
+    background-color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    
+
+
+}
+.top img{
+    width: 100px;
+    margin-left: px;
+
+}
+.top h1 {
+    color: var(--secondary-white);
+    display: flex;
+    
+}
+
+.profile-pic {
+    display: flex;
+}
+
+.top h1 {
+    padding-left: 50px;
+
+}
+
+.navigation {
+    display: flex;
+    height: 50px;
+    max-width: 100%;
+    background-color: var(--alternative-black);
+
+
+
+}
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+.active {
+	color: yellow;
+}
+
+
+.navigation,
+li {
+    display: flex;
+    color: var(--secondary-white);
+    justify-content: space-evenly;
+    color: var(--secondary-white);
+}
+
+.grid1 h2 {
+    height: 30px;
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--secondary-white);
+
+
+}
+
+.grid1 ul {
+    color: var(--alternative-black);
+}
+
+.grid4 h2 {
+
+    height: 30px;
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--secondary-white);
+
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    color: var(--alternative-black);
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    max-width: 500px;
+    margin: auto;
+
+
+
+}
+
+.button button {
+    background-color: var(--alternative-black);
+    color: var(--secondary-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    flex: 1;
+
+
+}
+
+.button2 div{
+    flex: 1 1 90%;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: var(--primary-blue);
+    color: var(--secondary-white);
+    display: flex;
+    justify-content: center;
+    
+}
+.course-btn {
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.course-btn.completed {
+    background-color: var(--completed-button); 
+}
+
+
+
+
+@media (min-width:640px) {
+    nav a {
+        display: block;
+        color: var(--secondary-white);
+        padding: 1rem;
+        align-items: center;
+        width: 100%;
+
+
+    }
+    .grid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 20px;
+        width: 93%;
+        margin: 0 auto;
+        
+        
+    
+
+
+    }
+    .wrk {
+        grid-column:span 1;
+        grid-row: 1;
+        align-self: start;
+        box-shadow: 0px 4px 8px;
+    }
+    .grid1 h2{
+        grid-column: span 1;
+        grid-row: 1;
+        align-self: start;
+        box-shadow: 0px 4px 8px;
+    }
+    .grid1 div{
+        grid-column: 1/2;
+        grid-row: 2;
+        box-shadow: 0px 4px 8px;
+
+    }
+    .profile-pic{
+        grid-column: 2/3;
+        grid-row: 2;
+        box-shadow: 0px 4px 8px;
+        margin: 0 auto;
+        
+        
+    }
+    .profile-pic img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .button2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .button2 div{
+        flex: 1 1 30%;
+        justify-content: center;
+    }
+
+    .button2 button {
+        width: 100%;
+        height: 30px;
+        color: pink;
+        background-color: black;
+        border-radius: 4px;
+    
+    }
+
+
+
+
+}
