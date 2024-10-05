@@ -1,0 +1,119 @@
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+  }
+  
+  ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  ul.navigation li {
+    margin: 0 15px;
+  }
+  
+  ul.navigation a {
+    color: #fff;
+    text-decoration: underline;
+
+  }
+  
+  button#menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  footer{
+    display: flex;
+    flex: 1 1 30%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: center;
+  }
+  .grid1 a {
+    color: white;
+    text-decoration: solid;
+  }
+  .grid2 img{
+    padding: 10px;
+    
+  }
+  .member {
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .member img.member-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .member h2 {
+    margin: 10px 0;
+  }
+  
+  .member p {
+    margin: 5px 0;
+  }
+  
+  /* Default grid view */
+  .member-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .member {
+    display: inline-block;
+    width: 30%;
+  }
+  
+  /* Toggle list view */
+  .member-list .member {
+    display: block;
+    width: 100%;
+  }
+  
+
+  
+  @media (max-width: 767px) {
+    nav {
+      position: relative;
+    }
+  
+    ul.navigation {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+  
+    ul.navigation li {
+      margin: 10px 0;
+    }
+  
+    button#menu {
+      display: block;
+    }
+
+    ul.navigation.show {
+      display: flex;
+    }
+  }
+  

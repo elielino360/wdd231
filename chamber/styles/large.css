@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+            
+    }
+  
+    ul.navigation {
+      display: flex;
+    }
+    #footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        column-gap: 3%;
+        align-items: center;
+        justify-items: center;
+    
+
+        
+      
+    }
+    
+  }

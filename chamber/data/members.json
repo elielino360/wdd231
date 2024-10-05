@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Technomiter",
+    "address": "no 50 lagos island, Nigeria",
+    "phone": "+234816467483",
+    "website": "https://technomiter.com",
+    "icon": "technology-logo.png",
+    "membershipLevel": 3,
+    "otherInfo": "Leading tech solutions provider."
+  },
+  {
+    "name": "Green light",
+    "address": "No 17 1004 street V/I lagos nigeria",
+    "phone": "+2347065432589",
+    "website": "https://greenlight.com",
+    "icon": "energy-logo.png",
+    "membershipLevel": 2,
+    "otherInfo": "Eco-friendly energy supplier."
+  },
+  {
+    "name": "Health First Hospital",
+    "address": "aba road Wellness Way, Nigeria",
+    "phone": "+234906754327",
+    "website": "https://healthfirsthospital.com",
+    "icon": "Healthcare-logo.png",
+    "membershipLevel": 1,
+    "otherInfo": "Healthcare and wellness services."
+  },
+  {
+    "name": "Creative Design Studio",
+    "address": "101 Art Avenue lagos, Nigeria",
+    "phone": "+2349064543456",
+    "website": "https://creativedesign.com",
+    "icon": "Creative-design-logo.png",
+    "membershipLevel": 3,
+    "otherInfo": "Graphic design and branding services."
+  },
+  {
+    "name": "GS Trade Logistics",
+    "address": "202 International way lagos, Nigeria",
+    "phone": "+2348668769768",
+    "website": "https://gstrade.com",
+    "icon": "Logistic-logo.png",
+    "membershipLevel": 2,
+    "otherInfo": "Worldwide shipping and logistics."
+  },
+  {
+    "name": "Finance plus",
+    "address": "303 adenuga ibrahim way ajah lagos, NG",
+    "phone": "+23480975457357",
+    "website": "https://financeplus.com",
+    "icon": "Finance-logo.png",
+    "membershipLevel": 1,
+    "otherInfo": "Financial advisory and consultancy."
+  },
+  {
+    "name": "Eduplus School",
+    "address": "404 Knowledge Lane ikoyi lagos, Nigeria",
+    "phone": "+2348075432678",
+    "website": "https://eduplusacademy.com",
+    "icon": "Educational-logo.png",
+    "membershipLevel": 3,
+    "otherInfo": "Online education and training."
+  }
+]
