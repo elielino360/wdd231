@@ -5,7 +5,10 @@ header {
     color: #fff;
     width: 100%;
   }
-  
+  header{
+    height: 30px;
+    width: 100%;
+  }
   ul.navigation {
     list-style-type: none;
     margin: 0;
