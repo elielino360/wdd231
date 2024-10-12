@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Welcome to the Chamber directory page">
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Offering tour packages for individuals or groups.">
-    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
-    <meta property="og:url" content="http://euro-travel-example.com/index.htm">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="Website" />
+    <meta property="og:description" content="Your number one discovery platform for business and individual.">
+    <meta property="og:image" content="https://images.app.goo.gl/riAbbtWw3htTKP1Z8">
+    <meta property="og:url" content="http://127.0.0.1:3000/chamber/index.html">
+    <meta name="twitter:card" content="https://images.app.goo.gl/riAbbtWw3htTKP1Z8">
     <title>Chamber Directory| Elijah Ebinum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +18,76 @@
     <link rel="stylesheet" href="styles/home.css">
     <link href="/https://www.favicon.cc/?action=icon&file_id=1012634/favicon.ico" rel="icon" type="image/x-icon">
     <script src="scripts/global-script.js" defer></script>
+    <script src="scripts/home-script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
             <button id="menu" aria-label="Toggle Menu">&#9776;</button>
             <ul class="navigation">
-              <li><a href="#" title="home">Home</a></li>
-              <li><a href="#" title="discovery">Discovery</a></li>
-              <li><a href="#" title="business directory">Business Directory</a></li>
-              <li><a href="#" title="Join">Join</a></li>
+                <li><a href="#" title="home">Home</a></li>
+                <li><a href="#" title="discovery">Discovery</a></li>
+                <li><a href="#" title="business directory">Business Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
     <main>
+
         <body>
-            <section>
+            <section class="hero-section">
+                <picture>
+                    <source src="images/hero-image-large.webp" media="(min-width: 1500px)" width="1500" height="750">
+                    <source src="images/hero-image-med.webp" media="(min-width: 1000px )" width="1000" height="500">
+                    <img src="images/hero-image-small.webp" alt="Hero image" width="500" height="250" loading="lazy">
+                </picture>
+                <a href="#"><button>Join Now</button></a>
+            </section>
+            <h1>Home</h1>
+            <section class="home-section">
+                <div class="event">
+                    <h2>Events</h2>
+
+
+                </div>
+                <div class="current-weather">
+                    <p id="place"></p>
+                    <p id="temperature"></p>
+                    <img id="icon" src="" alt="">
+                    <p id="description"></p>
+
+                </div>
+                <div class="weather-forcast">
+                    <p id="today"></p>
+                    <p id="tommorow"></p>
+                    <p id="next"></p>
+
+                </div>
 
             </section>
-          
+            <section class="member">
+                <div class="grid1">
+                    <h2 id="comName"></h2>
+                    <p id="logo"></p>
+                    <p id="phone"></p>
+                    <p id="webLink"></p>
+                </div>
+                <div class="grid2">
+                    <h2 id="comName"></h2>
+                    <p id="logo"></p>
+                    <p id="phone"></p>
+                    <p id="webLink"></p>
+                </div>
+                <div class="grid3">
+                    <h2 id="comName"></h2>
+                    <p id="logo"></p>
+                    <p id="phone"></p>
+                    <p id="webLink"></p>
+                </div>
+
+            </section>
+
         </body>
     </main>
 
@@ -64,10 +116,11 @@
                 <p>WDD231 Class Project</p>
                 <p>Elijah Ebinum</p>
                 <p>&copy; <span id="currentyear"></span>
-                    
+
                 <p id="lastModifiedInfo">Last modified: <span id="lastModified"></span></p>
             </div>
     </footer>
-    
+
 </body>
+
 </html>
