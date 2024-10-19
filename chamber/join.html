@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="join our chamber platform now">
+    <meta property="og:type" content="Website" />
+    <meta property="og:description" content="Your number one discovery platform for business and individual.">
+    <meta property="og:image" content="https://images.app.goo.gl/riAbbtWw3htTKP1Z8">
+    <meta property="og:url" content="http://127.0.0.1:3000/chamber/index.html">
+    <meta name="twitter:card" content="https://images.app.goo.gl/riAbbtWw3htTKP1Z8">
+    <title>Chamber Directory| Elijah Ebinum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global-style.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link href="/https://www.favicon.cc/?action=icon&file_id=1012634/favicon.ico" rel="icon" type="image/x-icon">
+    <script src="scripts/global-script.js" defer></script>
+    <script src="scripts/join-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="#" title="home">Home</a></li>
+                <li><a href="#" title="discovery">Discovery</a></li>
+                <li><a href="#" title="business directory">Business Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <section class="main-grid">
+             <div class="formdiv">
+                <h1>Membership Application Form</h1>
+                <form action="thankyou.html" method="get" class="my-form">
+                <label>First Name * <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name * <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>organizational title <input type="text" name="organizational" autocomplete="organization-title" title="Please enter a Title" pattern="[A-Za-z\s-]{7,}$"></label>
+                <label>Email Address * <input type="email" name="email" autocomplete="email" required placeholder="Johndoe@gmail.com" title="Enter Your Email"></label>
+                <label>Phone Number * <input type="tel" required name="phone number" title="Phone Number" autocomplete="tel"></label>
+                <label>Business/organization's name <input type="text" name="organization" autocomplete="organization" title="Business/organization name"></label>
+                <h3>membership level</h3>
+                <label>NP Membership  <input type="radio" name="level" id="np" value="np"></label>
+                <label>Bronze Membership <input type="radio" name="level" id="Bronze" value="Bronze"></label>
+                <label>Silver Membership <input type="radio" name="level" id="silver" value="silver"></label>
+                <label>Gold Membership <input type="radio" name="level" id="gold" value="gold"></label>     
+                <label> business/organization's description <input type="textarea" name="" id="bs"></label>
+                <label><input type="hidden" name="TimeStamp" id="f-timestamp"></label>
+        
+                <input type="submit" value=" Summit Your Application">
+                </form>
+            </div>
+            <div>
+                <h2 class="h2">Membership Levels</h2>
+                <div class="card">
+                    <div class="card1">
+                        <p>Non Profit Membership level</p>
+                        <button id="open-bt1"> Learn more</button>
+                        <dialog id="dialogBox">
+                            <div>
+
+                            </div>
+                            <button id="close-bt">Close</button>
+                        </dialog>
+                    </div>
+                    <div class="card2">
+                        <p>Bronze Membership Level</p>
+                        <button id="open-bt2"> Learn more</button>
+                    </div>
+                    <div class="card3">
+                        <p>Gold Membership Level</p>
+                        <button id="open-bt3"> Learn more</button>
+                       
+                    </div>
+                    <div class="card4">
+                        <p>Silver Membership Level</p>
+                        <button id="open-bt4"> Learn more</button>
+
+                    </div>
+
+                </div>
+
+
+    </main>
+    <footer>
+        <section id="footer-grid">
+            <div class="grid1">
+                <h2>Delta Chamber of Commerce</h2>
+                <p>No. 15 Okpanam Road, Asaba, Delta State, Nigeria</p>
+                <a href="mailto:hello@dccnigeria.com">hello@dccnigeria.com</a>
+            </div>
+            <div class="grid2">
+                <h2>Find us on Social Media</h2>
+                <a href="facebook.com" target="_blank" title="facebook">
+                    <img src="images/facebook-logo.png" alt="icon of facebook" width="40px">
+                </a>
+                <a href="x.com" target="_blank" title="twitter">
+                    <img src="images/twitter-logo.png" alt="icon of facebook" width="40px">
+                </a>
+
+                <a href="x.com" target="_blank" title="twitter">
+                    <img src="images/youtube-logo.png" alt="icon of facebook" width="40px">
+                </a>
+
+            </div>
+            <div class="grid3">
+                <p>WDD231 Class Project</p>
+                <p>Elijah Ebinum</p>
+                <p>&copy; <span id="currentyear"></span>
+
+                <p id="lastModifiedInfo">Last modified: <span id="lastModified"></span></p>
+            </div>
+    </footer>
+</body>
+</html>

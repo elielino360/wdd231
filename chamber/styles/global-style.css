@@ -15,7 +15,7 @@ header {
    
     
   }
-  
+ 
   ul.navigation li {
     margin: 0 15px;
   }
@@ -167,5 +167,18 @@ header {
       grid-template-rows: auto auto auto;
       gap: 10px;
     }
+    body{
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    footer {
+
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+  }
     
   }
