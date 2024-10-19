@@ -30,3 +30,7 @@ openButton4.addEventListener("click",()=>{
     dialogBox.showModal();
     myText.innerHTML=`The Gold Membership is designed for businesses ready to maximize their exposure and opportunities. Enjoy all the perks of the Silver level, plus top-tier directory placement, priority advertising on our homepage, and VIP access to exclusive events, workshops, and training sessions. Perfect for businesses seeking the ultimate growth advantage.`
 });
+document.addEventListener("DOMContentLoaded", function() {
+const currentDateTime = new Date().toISOString();
+document.getElementById("f-timestamp").value = currentDateTime;
+});
