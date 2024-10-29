@@ -2,7 +2,7 @@
 :root{
     --heading-black:#0A0908;
     --paragraph-liteblack:#1f170c;
-    --Accent--paleTaupe:#643806;
+    --Accent--paleTaupe:#22333B;
     --Background-beige:#EAE0D5;
     --Footer-deepbluegray:#22333B;
     --Primary-font-roboto:'Roboto', sans-serif;
@@ -23,8 +23,6 @@ p{
     font-family: var(--Primary-font-roboto);
 }
 .screen1, .screen2{
-
-
 text-align: center;
 }
 .screen1 img{
@@ -66,17 +64,58 @@ header {
   }
   #hero h2{
     text-align: center;
+    background-color: var(--Background-beige);
+    height: 40px
 
   }
   .hero-content img{
     width: 100%;
   }
-    a{
-    background-color: var(--Accent--paleTaupe);
-    color: #fff;
-    border: var(--Background-beige);
-    border-radius: 5px;
+
+  .news-grid img {
+    width: 50%;
+    border: 5px solid white;
+    border-radius: 8px;
+
   }
+  .news-grid .news-item {
+    padding: 10px;
+    border: 10px solid white;
+    border-radius: 8px;
+    background-color: var(--Background-beige);
+    text-align: center;
+}
+#latest-news h2{
+  text-align: center;
+}
+#hero .hero-content {
+  text-align: center;
+
+}
+
+.blog-grid{
+  text-align: center;
+  padding: 10px;
+}
+.blog-grid a, .news-grid a ,.hero-content a{
+  background-color: var(--Accent--paleTaupe);
+  color: #fff;
+  border: var(--Background-beige);
+  border-radius: 5px; 
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+
+}
+footer{
+  margin-top: 20px;
+  display: flex;
+  flex: 1 1 30%;
+  background-color: var(--Footer-deepbluegray);
+  color: white;
+  justify-content: center;
+}
+
 
 
   @media (min-width: 768px) {
@@ -91,21 +130,46 @@ header {
     ul.navigation {
       display: flex;
     }
-    .news-grid{
-     grid-template-columns: 1fr 1fr; 
-     grid-template-rows:1fr 1fr; 
-     gap: 20px; 
-     max-width: 800px;
-     margin: 0 auto;
-    }
-    .news-grid img{
-       width: 50%;
-    }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto); 
+      gap: 20px; 
+      max-width: 800px;
+      margin: 0 auto;
+  }
+ 
     .blog-grid{
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 10px;
       column-gap: 20px;
     }
+    .news-grid .news-item{
+
+      border: 10px solid wheat;
+    }
+
+    #footer-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      width: 100%;
+      column-gap: 3%;
+      align-items: center;
+      justify-items: center; 
+    }
+
+    footer {
+
+      width: 100%;
+      background-color: var(--Footer-deepbluegray);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      color: white;
+  }
 
   }    
