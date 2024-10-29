@@ -1,0 +1,26 @@
+header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+  }
+  header{
+    height: 30px;
+    width: 100%;
+  }
+  ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+    
+  }
+ 
+  ul.navigation li {
+    margin: 0 15px;
+  }
+  
+  ul.navigation a {
+    color: #fff;
+    text-decoration: underline;
+  }

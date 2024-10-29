@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --heading-black:#0A0908;
+    --paragraph-liteblack:#1f170c;
+    --Accent--paleTaupe:#643806;
+    --Background-beige:#EAE0D5;
+    --Footer-deepbluegray:#22333B;
+    --Primary-font-roboto:'Roboto', sans-serif;
+    --Secondart-font-montserrat:'Montserrat',sans-serif;
+    --Accent-font-Lora: 'Lora',sans-Serif;
+    
+    
+}
+
+
+h1, h2 {
+    font-family: var(--Secondart-font-montserrat);
+    color: var(--heading-paragaph-black);
+}
+
+p{
+    color: var(--paragraph-liteblack);
+    font-family: var(--Primary-font-roboto);
+}
+.screen1, .screen2{
+
+
+text-align: center;
+}
+.screen1 img{
+    margin-bottom: 10%;
+    align-items: center;
+    height: 800px;
+    width: 1200px;
+}
+ /* Global header styling for the */
+header {
+    background-color: var(--heading-black);
+    padding: 10px;
+    color: var(--Background-beige);
+    width: 100%;
+  }
+  header{
+    height: 30px;
+    width: 100%;
+  }
+  ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+  }
+ 
+  ul.navigation li {
+    margin: 0 15px;
+  }
+  
+  ul.navigation a {
+    color: #fff;
+    text-decoration: underline;
+  
+
+  }
+  #hero p, h3, a{
+    padding: 10px;
+    text-align: center;
+  }
+  #hero h2{
+    text-align: center;
+
+  }
+  .hero-content img{
+    width: 100%;
+  }
+    a{
+    background-color: var(--Accent--paleTaupe);
+    color: #fff;
+    border: var(--Background-beige);
+    border-radius: 5px;
+  }
+
+
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+            
+    }
+  
+    ul.navigation {
+      display: flex;
+    }
+    .news-grid{
+     grid-template-columns: 1fr 1fr; 
+     grid-template-rows:1fr 1fr; 
+     gap: 20px; 
+     max-width: 800px;
+     margin: 0 auto;
+    }
+    .news-grid img{
+       width: 50%;
+    }
+    .blog-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10px;
+      column-gap: 20px;
+    }
+
+  }    
