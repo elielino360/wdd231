@@ -64,9 +64,6 @@ header {
   }
   #hero h2{
     text-align: center;
-    background-color: var(--Background-beige);
-    height: 40px
-
   }
   .hero-content img{
     width: 100%;
@@ -93,6 +90,9 @@ header {
 
 }
 
+#blog h2{
+  text-align: center;
+}
 .blog-grid{
   text-align: center;
   padding: 10px;
