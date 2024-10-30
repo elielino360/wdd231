@@ -58,24 +58,37 @@ header {
   
 
   }
+  #news h2{
+  text-align: center;
+    color: var(--heading-black);
+
+  }
   #hero p, h3, a{
     padding: 10px;
     text-align: center;
   }
   #hero h2{
     text-align: center;
+    color: var(--heading-black);
   }
-  .hero-content img{
+  #Headline h2{
+    text-align: center;
+    color: var(--heading-black);
+
+  }
+  .hero-content img, .Headline-content img{
     width: 100%;
   }
 
-  .news-grid img {
+
+  .news-grid img, .news-now img {
     width: 50%;
     border: 5px solid white;
     border-radius: 8px;
+    margin-top: 20px;
 
   }
-  .news-grid .news-item {
+  .news-grid .news-item .myNews-item{
     padding: 10px;
     border: 10px solid white;
     border-radius: 8px;
@@ -84,20 +97,40 @@ header {
 }
 #latest-news h2{
   text-align: center;
+  color: var(--heading-black);
 }
-#hero .hero-content {
+#hero .hero-content  {
   text-align: center;
 
+}
+.Headline-content{
+  text-align: center;
 }
 
 #blog h2{
   text-align: center;
+  color: var(--heading-black);
 }
 .blog-grid{
   text-align: center;
   padding: 10px;
 }
-.blog-grid a, .news-grid a ,.hero-content a{
+#news button{
+margin: 20px;
+
+}
+.news-now{
+  text-align: center;
+  padding: 10px;
+  background-color: var(--Background-beige);
+  width: 100%;
+}
+.news-now a{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-grid a, .news-grid a ,.hero-content a, .news-now a, .Headline-content a{ 
   background-color: var(--Accent--paleTaupe);
   color: #fff;
   border: var(--Background-beige);
@@ -115,6 +148,11 @@ footer{
   color: white;
   justify-content: center;
 }
+#footer-grid p, h2, a{
+  color: var(--Background-beige);
+  text-decoration: none;
+}
+
 
 
 
@@ -171,5 +209,18 @@ footer{
       padding: 10px;
       color: white;
   }
+  /* news page styling large screen */
+  .news-now{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto); 
+      gap: 20px; 
+      width: 100%;
+      margin: 0 auto;
+  }
 
-  }    
+
+  } 
+  
+  
+  

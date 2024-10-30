@@ -16,6 +16,8 @@ const heroSection = document.querySelector("#hero .hero-content");
 const latestNews = document.querySelector("#latest-news .news-grid");
 const blogSection = document.querySelector("#blog .blog-grid");
 
+
+
 async function fetchnews() {
   try {
       const response = await fetch(url);
@@ -108,6 +110,34 @@ async function fetchnews() {
 
           blogSection.appendChild(blogItem);
       });
+
+      //Javascript code for news page
+       blogSection.innerHTML = "";
+
+    
+      articles.slice(5, 7).forEach(article => {
+          const blogTitle = document.createElement("h3");
+          blogTitle.textContent = article.title;
+
+          const blogDesc = document.createElement("p");
+          blogDesc.textContent = article.description || "No description for this article";
+
+          const blogUrl = document.createElement("a");
+          blogUrl.href = article.url;
+          blogUrl.textContent = "Read More";
+          blogUrl.target = "_blank";
+
+          const blogItem = document.createElement("div");
+          blogItem.classList.add("blog-item");
+          blogItem.appendChild(blogTitle);
+          blogItem.appendChild(blogDesc);
+          blogItem.appendChild(blogUrl);
+
+          blogSection.appendChild(blogItem);
+      });
+      
+      
+
 
   } catch (error) {
       console.error("Error fetching news data:", error);

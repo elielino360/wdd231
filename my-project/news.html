@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://www.favicon.cc/?action=icon&file_id=1012634/favicon.ico" rel="icon" type="image/x-icon">
-    <script src="scripts/project-script.js" defer></script>
+    
+    <script src="scripts/news-script.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,27 +32,28 @@
         </nav>
     </header>
     <main>
-        <!-- HERO SECTION -->
-        <section id="hero">
-            <h2>Featured News</h2>
-            <div class="hero-content"></div>
+        <!-- FEATURED NEWS SECTION -->
+        <section id="Headline">
+            <h2>Headline</h2>
+            <div class="Headline-content">
+                <!-- Populated dynamically -->
+            </div>
         </section>
-        <br>
-        <hr>
 
         <!-- LATEST NEWS SECTION -->
-        <section id="latest-news">
+        <section id="news">
             <h2>Latest News</h2>
-            <div class="news-grid"></div>
+            <div class="news-now">
+                <!-- Articles will be dynamically populated here -->
+            </div>
         </section>
 
-        <!-- BLOG SECTION -->
-        <section id="blog">
-            <h2>Latest Blog Post</h2>
-            <div class="blog-grid"></div>
+        <!-- PAGINATION SECTION -->
+        <section id="pagination">
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
         </section>
     </main>
-
     <footer>
         <section id="footer-grid">
             <div class="grid1">
