@@ -30,26 +30,34 @@
     </header>
     <main>
         <!-- HERO SECTION -->
-        <section id="hero">
-            <h2>Featured News</h2>
-            <div class="hero-content"></div>
+        <section id="contactus-hero">
+            <picture>
+                <source src="images/contact-us-large.webp" media="(min-width: 1500px)" width="1500" height="1000">
+                <source src="images/contact-us-medium.webp" media="(min-width: 1000px )" width="1000" height="700">
+                <img src="images/contact-us-small.webp" alt="Contact us image" width="500" height="250" loading="lazy">
+            </picture>
         </section>
-        <br>
-        <hr>
-
-        <!-- LATEST NEWS SECTION -->
-        <section id="latest-news">
-            <h2>Latest News</h2>
-            <div class="news-grid"></div>
-        </section>
-
-        <!-- BLOG SECTION -->
-        <section id="blog">
-            <h2>Latest Blog Post</h2>
-            <div class="blog-grid"></div>
-        </section>
-    </main>
-
+        <section class="main-grid">
+            <div class="formdiv">
+               <h1>Fill out the contact form to contact us </h1>
+               <form action="thankyou.html" method="get" class="my-form">
+               <label>First Name * <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+               <label>Last Name * <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+               <label>Company Name <input type="text" name="company" autocomplete="organization-title" title="Please enter a Title" pattern="[A-Za-z\s-]{7,}$"></label>
+               <label>Email Address * <input type="email" name="email" autocomplete="email" required placeholder="Johndoe@gmail.com" title="Enter Your Email"></label>
+               <label>Phone Number * <input type="tel" required name="phone-number" title="Phone Number" autocomplete="tel"></label>
+            
+               <h3>Why are you contacting us?</h3>
+               <label>Advert Placement  <input type="radio" name="level" id="np" value="np"></label>
+               <label>Guest Posting Enquiries<input type="radio" name="level" id="Bronze" value="Bronze"></label>
+               <label>Other Enquiries<input type="radio" name="level" id="silver" value="silver"></label>
+               <label>Enter your message below<input type="textarea" name="" id="bs" placeholder="Enter your text here"></label>
+               <label><input type="hidden" name="TimeStamp" id="f-timestamp"></label>
+       
+               <input type="submit" value=" Send your message">
+               </form>
+           </div>
+        </section> 
     <footer>
         <section id="footer-grid">
             <div class="grid1">

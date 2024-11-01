@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastName = urlParams.get("last");
     const email = urlParams.get("email");
     const phoneNumber = urlParams.get("phone%20number"); 
-    const organization = urlParams.get("organization");
+    const organization = urlParams.get("company");
     const timeStamp = urlParams.get("TimeStamp");
 
     
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p><strong>Last Name:</strong> ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-        <p><strong>Company Name:</strong> ${organization}</p>
+        <p><strong>Business/Organization Name:</strong> ${organization}</p>
         <p><strong>Submission Timestamp:</strong> ${timeStamp}</p>
     `;
 
