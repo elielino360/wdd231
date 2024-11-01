@@ -8,13 +8,13 @@ const myHeadline = document.querySelector("#Headline .Headline-content");
 const myNews = document.querySelector("#news .news-now");
 
 let currentPage = 1;
-const articlesPerPage = 8; // Display 8 articles per page
+const articlesPerPage = 8; 
 
 async function fetchnews() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        const articles = data.news; // Currents API uses 'news' for the articles array
+        const articles = data.news; 
 
         if (articles.length < 7) {
             console.warn('Not enough data to display');
@@ -22,9 +22,8 @@ async function fetchnews() {
         }
 
         // Display headline news
-        displayHeadline(articles[0]); // Assuming the first article as the headline
+        displayHeadline(articles[0]); 
 
-        // Initialize pagination on the Latest News section
         displayNewsPage(articles);
 
         // Add event listeners for pagination buttons
@@ -40,7 +39,7 @@ function displayHeadline(headlineNews) {
     myHeadline.innerHTML = "";
 
     const headLImg = document.createElement("img");
-    headLImg.src = headlineNews.image || "placeholder-image.jpg"; // 'image' instead of 'urlToImage'
+    headLImg.src = headlineNews.image || "placeholder-image.jpg";
     headLImg.alt = headlineNews.title;
     headLImg.loading = "lazy";
 
@@ -61,13 +60,13 @@ function displayHeadline(headlineNews) {
     myHeadline.appendChild(visitLink);
 }
 
-// Display articles for the current page
-function displayNewsPage(articles) {
-    myNews.innerHTML = ""; // Clear existing articles
-    const start = (currentPage - 1) * articlesPerPage + 1; // Start index, excluding the headline
-    const end = start + articlesPerPage; // End index
 
-    // Populate news section with articles for the current page
+function displayNewsPage(articles) {
+    myNews.innerHTML = ""; 
+    const start = (currentPage - 1) * articlesPerPage + 1; 
+    const end = start + articlesPerPage; 
+
+
     articles.slice(start, end).forEach(article => {
         const newsImg = document.createElement("img");
         newsImg.src = article.image || "placeholder-image.jpg";
@@ -96,11 +95,10 @@ function displayNewsPage(articles) {
     });
 }
 
-// Handle pagination logic
 function paginate(articles, direction) {
-    const totalPages = Math.ceil((articles.length - 1) / articlesPerPage); // Exclude headline article
+    const totalPages = Math.ceil((articles.length - 1) / articlesPerPage); 
     currentPage = Math.min(Math.max(1, currentPage + direction), totalPages);
     
-    // Refresh the display with the updated page
+    
     displayNewsPage(articles);
 }

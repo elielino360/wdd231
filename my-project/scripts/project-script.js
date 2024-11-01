@@ -22,14 +22,13 @@ document.getElementById('menu').addEventListener('click', function() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        const articles = data.news;  // Currents API uses 'news' instead of 'articles'
-  
+        const articles = data.news;  
+
         if (articles.length < 7) {
             console.warn('Not enough data to display');
             return;
         }
   
-        // Display first article in hero section
         heroSection.innerHTML = "";
         const firstArticle = articles[0];
         const heroImg = document.createElement("img");
@@ -53,7 +52,7 @@ document.getElementById('menu').addEventListener('click', function() {
         heroSection.appendChild(heroDescription);
         heroSection.appendChild(readMore);
   
-        // Display next articles in latest news section
+
         latestNews.innerHTML = "";
         articles.slice(1, 5).forEach(article => {
             const latestImg = document.createElement("img");
@@ -82,7 +81,7 @@ document.getElementById('menu').addEventListener('click', function() {
             latestNews.appendChild(newsItem);
         });
   
-        // Display additional articles in blog section
+        
         blogSection.innerHTML = "";
         articles.slice(5, 7).forEach(article => {
             const blogTitle = document.createElement("h3");
