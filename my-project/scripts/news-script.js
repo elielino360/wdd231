@@ -8,7 +8,7 @@ const myHeadline = document.querySelector("#Headline .Headline-content");
 const myNews = document.querySelector("#news .news-now");
 
 let currentPage = 1;
-const articlesPerPage = 8; 
+const articlesPerPage = 9; 
 
 async function fetchnews() {
     try {
@@ -21,12 +21,13 @@ async function fetchnews() {
             return;
         }
 
-        // Display headline news
+        
         displayHeadline(articles[0]); 
 
+        
         displayNewsPage(articles);
 
-        // Add event listeners for pagination buttons
+        
         document.getElementById('prev-page').addEventListener('click', () => paginate(articles, -1));
         document.getElementById('next-page').addEventListener('click', () => paginate(articles, 1));
     } catch (error) {
@@ -34,12 +35,12 @@ async function fetchnews() {
     }
 }
 
-// Display headline news
+
 function displayHeadline(headlineNews) {
     myHeadline.innerHTML = "";
 
     const headLImg = document.createElement("img");
-    headLImg.src = headlineNews.image || "placeholder-image.jpg";
+    headLImg.src = headlineNews.image || "placeholder-image.jpg"; 
     headLImg.alt = headlineNews.title;
     headLImg.loading = "lazy";
 
@@ -95,10 +96,11 @@ function displayNewsPage(articles) {
     });
 }
 
+
 function paginate(articles, direction) {
-    const totalPages = Math.ceil((articles.length - 1) / articlesPerPage); 
+    const totalPages = Math.ceil((articles.length - 1) / articlesPerPage); // Exclude headline article
     currentPage = Math.min(Math.max(1, currentPage + direction), totalPages);
     
-    
+  
     displayNewsPage(articles);
 }
