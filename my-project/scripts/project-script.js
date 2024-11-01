@@ -11,7 +11,8 @@ document.getElementById('lastModified').textContent = lastModified;
 
 document.addEventListener('DOMContentLoaded', fetchnews);
 const apiKey = "3f8e4928d9d64d45b9bd7d6b734c6e70";
-const url = `https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=${apiKey}`;
+const url = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=${apiKey}`;
+
 const heroSection = document.querySelector("#hero .hero-content");
 const latestNews = document.querySelector("#latest-news .news-grid");
 const blogSection = document.querySelector("#blog .blog-grid");
